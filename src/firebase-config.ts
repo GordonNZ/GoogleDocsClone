@@ -2,12 +2,13 @@
 import { initializeApp } from 'firebase/app';
 import { getAuth } from 'firebase/auth';
 import { getFirestore } from 'firebase/firestore';
+
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: 'AIzaSyDa8bQtTW-g5om0wzM0LYv7B4Lqb3k91sM',
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: 'docsclone-1cfee.firebaseapp.com',
   projectId: 'docsclone-1cfee',
   storageBucket: 'docsclone-1cfee.firebasestorage.app',
